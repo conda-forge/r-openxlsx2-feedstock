@@ -1,4 +1,4 @@
-{% set version = '1.6' %}
+{% set version = "1.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/openxlsx2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/openxlsx2/openxlsx2_{{ version }}.tar.gz
-  sha256: 999f2537f1f307872c95d5b0983985dc472eca9c0cf5dc3a5f8a5ce5d34e1d22
+  sha256: 5e030e19002b00a907ca748c83e7a20b2744561b58e3fbb5f4988b5fca59734e
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -60,8 +60,7 @@ test:
 about:
   home: https://janmarvin.github.io/openxlsx2/, https://github.com/JanMarvin/openxlsx2
   license: MIT
-  summary: Simplifies the creation of 'xlsx' files by providing a high level interface to writing,
-    styling and editing worksheets.
+  summary: Simplifies the creation of 'xlsx' files by providing a high level interface to writing, styling and editing worksheets.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
