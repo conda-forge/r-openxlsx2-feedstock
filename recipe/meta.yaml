@@ -1,6 +1,5 @@
 {% set version = "1.8" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-openxlsx2
@@ -13,8 +12,7 @@ source:
   sha256: 24253d9ca3ffbf77c96ad66c535c110b5cd3597ad10f58418b90786453b82cbe
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -45,7 +43,6 @@ requirements:
     - r-zip
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-r6
     - r-rcpp
     - r-magrittr
