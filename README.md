@@ -7,26 +7,37 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-openxlsx2-fee
 About r-openxlsx2
 -----------------
 
-Home: https://janmarvin.github.io/openxlsx2/, https://github.com/JanMarvin/openxlsx2
+Home: https://janmarvin.github.io/openxlsx2/
 
 Package license: MIT
 
-Summary: Simplifies the creation of 'xlsx' files by providing a high level interface to writing, styling and editing worksheets.
+Summary: Simplifies the creation of Excel .xlsx files by providing a high level interface to writing, styling and editing worksheets. Through the use of 'Rcpp', read/write times are comparable to the 'xlsx' and 'XLConnect' packages with the added benefit of removing the dependency on Java.
+
+Development: https://github.com/JanMarvin/openxlsx2
 
 About r-openxlsx2
 -----------------
 
-Home: https://janmarvin.github.io/openxlsx2/, https://github.com/JanMarvin/openxlsx2
+Home: https://janmarvin.github.io/openxlsx2/
 
 Package license: MIT
 
-Summary: Simplifies the creation of 'xlsx' files by providing a high level interface to writing, styling and editing worksheets.
+Summary: Simplifies the creation of Excel .xlsx files by providing a high level interface to writing, styling and editing worksheets. Through the use of 'Rcpp', read/write times are comparable to the 'xlsx' and 'XLConnect' packages with the added benefit of removing the dependency on Java.
+
+Development: https://github.com/JanMarvin/openxlsx2
 
 Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/conda-forge/r-openxlsx2-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/r-openxlsx2-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -40,20 +51,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22494&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-openxlsx2-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_r_base4.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22494&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-openxlsx2-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_r_base4.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22494&branchName=main">

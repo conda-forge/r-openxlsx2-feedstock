@@ -1,4 +1,4 @@
-{% set version = "1.26" %}
+{% set version = "1.27" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/openxlsx2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/openxlsx2/openxlsx2_{{ version }}.tar.gz
-  sha256: 1c40bba70d2c3158ad2b0fd5541c90336594165905994d599661774a14d13afe
+  sha256: f963c922fdc3ef1eec10f052b461374ec409977c1707abfaaeb56e7da87774fc
 
 build:
   number: 0
@@ -40,11 +40,13 @@ requirements:
     - r-r6
     - r-rcpp
     - r-stringi
+    - r-zip
   run:
     - r-base
     - r-r6
     - r-rcpp
     - r-stringi
+    - r-zip
 
 test:
   commands:
@@ -52,9 +54,13 @@ test:
     - "\"%R%\" -e \"library('openxlsx2')\""  # [win]
 
 about:
-  home: https://janmarvin.github.io/openxlsx2/, https://github.com/JanMarvin/openxlsx2
+  home: https://janmarvin.github.io/openxlsx2/
+  dev_url: https://github.com/JanMarvin/openxlsx2
   license: MIT
-  summary: Simplifies the creation of 'xlsx' files by providing a high level interface to writing, styling and editing worksheets.
+  summary: Simplifies the creation of Excel .xlsx files by providing a high level interface to
+    writing, styling and editing worksheets. Through the use of 'Rcpp', read/write times
+    are comparable to the 'xlsx' and 'XLConnect' packages with the added benefit of
+    removing the dependency on Java.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
