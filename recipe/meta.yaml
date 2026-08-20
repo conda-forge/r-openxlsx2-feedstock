@@ -1,15 +1,15 @@
-{% set version = "1.28" %}
+{% set version = "1.29" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-openxlsx2
-  version: "{{ version|replace("-", "_") }}"
+  version: {{ version|replace("-", "_") }}
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/openxlsx2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/openxlsx2/openxlsx2_{{ version }}.tar.gz
-  sha256: a7c30f4b089ce4ed5c3c8428700ffed94a77704d19ebe3c03590a26e54cccca4
+  sha256: dda4755d18d23e053d942b23538a9f7139aca2b156572e28e2e76588b28e5b74
 
 build:
   number: 0
